@@ -6,12 +6,12 @@ const Navbar = () => {
 
     const ulLInks = <>
 
-        <li><a>Home</a></li>
-        <li><a>Details</a></li>
-        <li><a>Category</a></li>
-        <li><a>My Favorite</a></li>
-        <li><a>Profile</a></li>
-        <li><a>Login/Sign Up</a></li>
+        <li className="hover:text-orange-500"><a>Home</a></li>
+        <li className="hover:text-orange-500"><a>Details</a></li>
+        <li className="hover:text-orange-500"><a>Category</a></li>
+        <li className="hover:text-orange-500"><a>My Favorite</a></li>
+        <li className="hover:text-orange-500"><a>Profile</a></li>
+        <li className="hover:text-orange-500"><a>Login/Sign Up</a></li>
 
     </>
 
