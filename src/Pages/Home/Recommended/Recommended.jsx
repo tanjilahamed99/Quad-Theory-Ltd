@@ -32,7 +32,7 @@ const Recommended = () => {
                 {
                     popular?.map((item,idx) => <div
                     className={`keen-slider__slide number-slide${idx}`}
-                    key={item.id}>
+                    key={item.Id}>
                         <img className="md:w-full lg:h-[300px] h-[100px] w-[500px]" src={item?.ImageUrl} alt="" />
                         <h2 className="text-center font-semibold mt-2 md:text-lg text-sm">{item?.Name}</h2>
                     </div>)
