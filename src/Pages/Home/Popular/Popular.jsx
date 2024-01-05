@@ -25,7 +25,9 @@ const Popular = () => {
 
     const { register, handleSubmit, } = useForm()
 
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = (data) =>{
+        console.log(data)
+    }
 
     return (
         <div className="px-5">
@@ -41,19 +43,19 @@ const Popular = () => {
                                 <button className="text-white absolute right-2 top-2">✕</button>
                             </form>
                             <form className="grid grid-cols-2 gap-4" onSubmit={handleSubmit(onSubmit)}>
-                                <div>
+                                <div className="col-span-2 md:col-span-1">
                                     <h2 className="text-sm font-bold mb-1 text-white">Name</h2>
                                     <input className="p-2 rounded-xl" {...register("name")} placeholder="name" type="text" required/>
                                 </div>
-                                <div>
+                                <div className="col-span-2 md:col-span-1">
                                     <h2 className="text-sm font-bold mb-1 text-white">Price</h2>
                                     <input className="p-2 rounded-xl" {...register("price")} placeholder="Price" type="number" required/>
                                 </div>
-                                <div>
+                                <div className="col-span-2 md:col-span-1">
                                     <h2 className="text-sm font-bold mb-1 text-white">ImageUrl</h2>
                                     <input className="p-2 rounded-xl" {...register("ImageUrl")} placeholder="http" type="text" required/>
                                 </div>
-                                <div>
+                                <div className="col-span-2 md:col-span-1">
                                     <h2 className="text-sm font-bold mb-1 text-white">Rating</h2>
                                     <input className="p-2 rounded-xl" {...register("rating")} placeholder="name" type="number" required/>
                                 </div>
